@@ -67,3 +67,31 @@ logging:
 debug:
   capture_on_battle: false
 
+# Regiões de Interesse (ROIs) - Coordenadas [x, y, width, height]
+rois:
+  # Baseado na Imagem 1 (Exploração - Canto Inferior Direito)
+  team_hud:
+    # A área total onde ficam os 6 pokémons
+    # Estimativa visual: x=1700, y=600, w=200, h=400 (exemplo para 1080p)
+    container: [1780, 752, 1911, 1048] 
+    
+    # Altura de cada slot individual (para o código dividir o container)
+    slot_height: 50 
+
+  # Baseado na Imagem 2 (Batalha - Centro Inferior)
+  battle_moves:
+    # Botão Superior Esquerdo (Slot 1)
+    slot_1: [731, 827, 943, 894] 
+    # Botão Superior Direito (Slot 2)
+    slot_2: [955, 827, 1167, 895]
+    # Botão Inferior Esquerdo (Slot 3)
+    slot_3: [735, 910, 944, 972]
+    # Botão Inferior Direito (Slot 4)
+    slot_4: [958, 912, 1168, 973]
+
+  # Detecção de Batalha (Os 4 botões cinza/coloridos na parte inferior)
+  action_buttons:
+    fight: [871, 917, 1030, 970]   # Botão Fight/Pokemon
+    bag: [871, 984, 1030, 1039]     # Botão Bag
+    pokemon: [697, 983, 858, 1038] # Botão Pokemon
+    run: [1044, 986, 1205, 1038]    # Botão Run
