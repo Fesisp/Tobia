@@ -1,0 +1,39 @@
+{
+  "pikachu": {
+    "name": "Pikachu",
+    "types": ["electric"],
+    "base_stats": {
+      "hp": 35,
+      "attack": 55,
+      "defense": 40,
+      "sp_attack": 50,
+      "sp_defense": 50,
+      "speed": 90
+    }
+  },
+  "charizard": {
+    "name": "Charizard",
+    "types": ["fire", "flying"],
+    "base_stats": {
+      "hp": 78,
+      "attack": 84,
+      "defense": 78,
+      "sp_attack": 109,
+      "sp_defense": 85,
+      "speed": 100
+    }
+  },
+  "blastoise": {
+    "name": "Blastoise",
+    "types": ["water"],
+    "base_stats": {
+      "hp": 79,
+      "attack": 83,
+      "defense": 100,
+      "sp_attack": 85,
+      "sp_defense": 105,
+      "speed": 78
+    }
+  }
+}
+

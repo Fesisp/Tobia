@@ -1,0 +1,69 @@
+# Configurações Gerais do Bot
+bot:
+  name: "PokeoneBot"
+  version: "1.0.0"
+  enabled: true
+  debug_mode: false
+
+# Configurações de Captura de Tela
+screen:
+  capture_method: "mss"  # mss, pyautogui
+  region: null  # null = tela inteira, ou [x, y, width, height]
+  fps: 10  # Frames por segundo para captura
+
+# Configurações de Navegação
+navigation:
+  movement_delay: 0.1  # Delay entre movimentos (segundos)
+  human_like_movement: true
+  pathfinding_enabled: true
+
+# Configurações de Batalha
+battle:
+  auto_battle: true
+  strategy: "balanced"  # aggressive, defensive, balanced
+  switch_pokemon: true
+  use_items: false
+  action_cooldown: 3.0  # Cooldown entre ações em segundos (aumentar se ações muito rápidas)
+
+# Configurações de Captura
+capture:
+  auto_capture: true
+  min_iv_threshold: 0  # 0-31
+  preferred_pokemon: []  # Lista de Pokémon preferidos
+  use_best_ball: true
+
+# Configurações de Quests
+quests:
+  auto_follow: true  # Seguir automaticamente objetivos de quests
+  check_interval: 5.0  # Intervalo para verificar quests (segundos)
+  use_goto_button: true  # Usar botão Goto quando disponível
+
+# Configurações de IA
+ai:
+  use_rl: false  # Aprendizado por Reforço
+  model_path: "data/models/rl_model.zip"
+  exploration_rate: 0.1
+
+# Configurações de Segurança
+security:
+  anti_detection: true
+  random_delays: true
+  min_delay: 0.05
+  max_delay: 0.3
+  human_patterns: true
+
+# Configurações de OCR
+ocr:
+  tesseract_path: "C:/Program Files/Tesseract-OCR/tesseract.exe"
+  use_easyocr: false
+
+# Configurações de Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "logs/bot.log"
+  console: true
+
+# Debug options (local, for testing)
+debug:
+  capture_on_battle: false
+

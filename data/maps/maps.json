@@ -1,0 +1,26 @@
+{
+  "pallet_town": {
+    "name": "Pallet Town",
+    "region": "kanto",
+    "spawn_points": [
+      {
+        "x": 100,
+        "y": 100,
+        "name": "spawn_1"
+      },
+      {
+        "x": 200,
+        "y": 150,
+        "name": "spawn_2"
+      }
+    ],
+    "pokemon_centers": [
+      {
+        "x": 150,
+        "y": 120,
+        "name": "pokemon_center_1"
+      }
+    ]
+  }
+}
+
